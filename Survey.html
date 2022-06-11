@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      #main {
+        background-color: aqua;
+      }
+      #heading {
+        text-align: center;
+      }
+      #submain {
+        background-color:rgb(245, 240, 240);
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+      }
+      #para {
+        text-align: center;
+      }
+      #check {
+        text-align: center;
+      }
+	  
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="heading">Survey Form</h1>
+
+      <div id="submain">
+        <p id="para">Let us know how we can improve our website</p>
+        <form action="" method="">
+          <div id="name"> <sup>*</sup>
+            <label for="n">Name: </label>
+            <input
+              type="text"
+              id="n"
+              size="50"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <br />
+
+          <div id="email"><sup>*</sup>
+            <label for="e"> Email: </label>
+            <input
+              type="email"
+              id="e"
+              size="50"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <br />
+
+          <div id="age"><sup>*</sup>
+            <label for="a">Age: </label>
+            <input type="text" id="a" size="50" placeholder="Age" required />
+          </div>
+          <br />
+
+          <div id="select">
+            Which option best describes your current
+            <select>
+              <option value="ft" selected>Full Time</option>
+              <option value="pt">Part Time</option>
+            </select>
+            <br />occupation?
+          </div>
+          <br />
+
+          <div id="radio">
+            Where did you first hear about our website?
+            <input type="radio" name="web" id="w"/>
+            <label for="w">Search Engine </label>
+            <br />
+            <input type="radio" name="web" id="w" />
+            <label for="w">Facebook</label>
+            <br />
+            <input type="radio" name="web" id="w" />
+            <label for="w">Word of Mouth </label>
+            <br />
+            <input type="radio" name="web" id="w" />
+            <label for="w">Other</label>
+            <br />
+          </div>
+          <br />
+
+          <div id="buy">
+            What other options were you considering
+            <select name="" id="buy">
+              <option value="select" selected>Select an option</option>
+              <option value="shop">Nearby Shop</option>
+              <option value="market">Market</option>
+              <option value="none">None</option>
+            </select>
+            <br />
+            before buying from us?
+          </div>
+          <br />
+
+          <div id="check">
+            Things that should be improved in the future
+            <input type="checkbox" value="ld" id="ld" />
+            <label for="l">Load Speed</label>
+            <br />in our website
+            <input type="checkbox" value="p" id="p" />
+            <label for="p">Presentation</label>
+            <br />
+            <input type="checkbox" value="lc" id="lc" />
+            <label for="lc">Less Cookies</label>
+            <br />
+          </div><br>
+
+		  <div id="rtsb">
+			  <input type="reset" value="RESET">
+			  <br> <br> <br>
+			  <input type="image" src="IMAGE/SUBMIT.png" width="100" height="50">
+		    </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
